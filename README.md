@@ -13,7 +13,7 @@ Unless you really need the flight command and control stuff, you probably do not
 
 The chip on the A3200 is very obsolite and gomspace development kit is poorly documented. 
 
-I think it would almost certainly be better/faster/easier/more robust/lower power to use a standard chip and roll your own solution.
+I think it would almost certainly be significantly better/faster/easier/more robust/lower power/cheaper to use a standard chip and roll your own solution.
 
 # first steps
 
