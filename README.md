@@ -1,7 +1,8 @@
 # gomspace-a3200-missing-manual
 
-If you have a gomspace nanomind A3200 and you can not figure out how to get it to actually work, here are my (rough) notes on how I 
-got mine working. 
+Congradualtions, you are going to space! You have launch date and your gomspace nanomind A3200, nothing can stop you now! Except that you can not figure out how to get it to actually work. :/
+
+Here are my (very rough) notes on how I got mine working.
 
 Note that I do not work for `gomspace` and I have no connection to them other than I spent many hours trying to figure this stuff out. Here I am just tryingto save you from wasting the same time I did. 
 
