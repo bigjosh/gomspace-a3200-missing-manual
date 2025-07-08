@@ -24,6 +24,8 @@ I think it would almost certainly be significantly better/faster/easier/more rob
    
     https://github.com/bigjosh/gomspace-a3200-missing-manual/blob/main/programming%20gomspace%20A3200%20with%20an%20AVR%20Dragon%20under%20Windows.md
 
+    Note that this assumes that you already have a suitable flash image ready to program into the module. If you do not have one, then maybe ask gomspace to give you one. 
+
     If you absolutely can not use windows or can not get your hands on one of the proper Atmel programmers, here are steps to get it working with the gomspace-supplied
     HS3 JTAG programmer, but I warn you that this tool chain was very flakely for me and I really strongly do not recommend it...
 
@@ -32,7 +34,7 @@ I think it would almost certainly be significantly better/faster/easier/more rob
     Note that if you really really really want to get the HS3 stuff working correctly and you have a really really good reason (I am already skeptical), get in touch becuase I
     have some ideas about what is causing the failures.     
 
-2. Setup your board support package.
+3. Setup your board support package.
 
     This was mostly complicated by the fact that you can not get one of the dependancies anymore becuase it is obsolite, so we have to get the source and compile it from scratch...
 
@@ -40,7 +42,7 @@ I think it would almost certainly be significantly better/faster/easier/more rob
 
     https://github.com/bigjosh/gomspace-a3200-missing-manual/blob/main/setup%20gomspace%20under%20windows.md
 
-3. Start coding for space
+4. Start coding for space
 
     With this setup, you can edit the code (starting with main.cpp) in the board package linux environment, and then compile it also in that same environment using the `waf` command we
     used to make the inial version. Then you need to get that resulting `elf` file artifact over to windows so you can use Microchip Studio to program it. Note that `explorer.exe .` in
