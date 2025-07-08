@@ -6,18 +6,18 @@ That port is an 8 pin PicoBlade and we need to make the female side of it. I jus
 
 Mine looks like this...
 
-![Picoblade jtag connector.png]
+![](Picoblade%20jtag%20connector.png)
 
 ### Pinout on A3200 side
 
 From `gs-ds-nanomind-a3200.PDF`:
-![[programming gomspace A3200 with an AVR Dragon under Windows.png]]
+![](programming%20gomspace%20A3200%20with%20an%20AVR%20Dragon%20under%20Windows.png)
 
 ### Pinout on Dragon side
 
 From [ww1.microchip.com/downloads/en/devicedoc/atmel-42723-avr-dragon\_userguide.pdf](https://ww1.microchip.com/downloads/en/devicedoc/atmel-42723-avr-dragon_userguide.pdf):
 
-![[avr DRAGON JTAG PINOUT.png]]
+![](avr%20DRAGON%20JTAG%20PINOUT.png)
 
 To make things easy, I used a breadboard in between. This will also make it easier to add a logic analyzer onto these lines later in case something doesn't work right. To make this work, I soldered all the `male` ends of the pigtails to a pin header. Be careful to keep those little wires in order!
 
@@ -29,7 +29,7 @@ The rest are self-evident.
 Double check your work. The Dragon is pretty good about how it drives lines, but it would be a shame to blow out that $5000 A3200 because of some crossed wires. 
 
 Here is how mine looks...
-![[dragon to a3200.png]]
+![](dragon%20to%20a3200.png)
 
 
 ## Final connections
@@ -40,7 +40,7 @@ We also need a USB cable from the PC to the Dragon. Duh.
 
 All done, should look a little somthing like this...
 
-![[full setup.png]]
+![](full%20setup.png)
 
 ## Programming it
 
@@ -57,7 +57,7 @@ Pick "AT32UC3C0512C" for device.
 Pick "JTAG" for interface. 
 Hit apply. 
 
-![[device programming window.png]]
+![](device%20programming%20window.png)
 
 Click the "Read" button and it should blink some blinks and put the same number I got into the box. 
 
@@ -79,12 +79,12 @@ Next lets connect to the A3200 over the serial port to see if our image  actuall
 
 Use any terminal program (I use TeraTerm, but you can also use Putty). Set baud to 500000. You will need to figure out which COM port the serial port ended up on on your PC. 
 
-![[COM settings.png]]
+![](COM%20settings.png)
 
 
 Connect and start typing!
 
-![[a3200 debug console bring up.png]]
+![](a3200%20debug%20console%20bring%20up.png)
 
 Your first command should be "HELP".
 After that, try "CHECKOUT ALL".
