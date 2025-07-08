@@ -6,7 +6,7 @@ That port is an 8 pin PicoBlade and we need to make the female side of it. I jus
 
 Mine looks like this...
 
-![[Picoblade jtag connector.png]]
+![Picoblade jtag connector.png]
 
 ### Pinout on A3200 side
 
