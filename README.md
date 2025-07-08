@@ -7,6 +7,9 @@ Note that I do not work for `gomspace` and I have no connection to them other th
 
 Everything here happens on a Windows machine, but Linux people can at least follow along with the toolchain stuff that happens inside a windows-subsystem-for-linux VM. 
 
+Everything here assumes you got a giant GZ file from gomspace with all (most?) the needed tools in it, and that you know how to open that file and pull out the other GZ files that
+are nested in it. 
+
 # first comment
 
 Unless you really need the flight command and control stuff, you probably do not need this platform. Turn back if it is not too late. 
@@ -24,7 +27,8 @@ I think it would almost certainly be significantly better/faster/easier/more rob
    
     https://github.com/bigjosh/gomspace-a3200-missing-manual/blob/main/programming%20gomspace%20A3200%20with%20an%20AVR%20Dragon%20under%20Windows.md
 
-    Note that this assumes that you already have a suitable flash image ready to program into the module. If you do not have one, then maybe ask gomspace to give you one. 
+    Note that this assumes that you already have a suitable flash image ready to program into the module. If you do not have one, then maybe ask gomspace to give you one. If that doesn't
+    work then I guess skip to step 2 where we will make one. 
 
     If you absolutely can not use windows or can not get your hands on one of the proper Atmel programmers, here are steps to get it working with the gomspace-supplied
     HS3 JTAG programmer, but I warn you that this tool chain was very flakely for me and I really strongly do not recommend it...
