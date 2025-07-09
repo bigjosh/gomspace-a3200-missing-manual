@@ -4,10 +4,6 @@ Assuming you only have the default HS3 cable that gomspace gives you, first we n
 That port is an 8 pin PicoBlade and we need to make the female side of it. I just bought this connect kit from amazon, which makes things very easy...
 [Amazon.com: Yoeruyo PicoBlade 1.25mm Pitch Male Female Connector with Premium 28AWG Pre-Crimped Cables,Compatible with Molex PicoBlade 1.25mm Male Female Connector 2/3/4/5/6/7/8/9/10 Pin Housing (MX1.25-MF) : Electronics](https://amzn.to/4kCVaVW)
 
-Mine looks like this...
-
-![](Picoblade%20jtag%20connector.png)
-
 ### Pinout on A3200 side
 
 From `gs-ds-nanomind-a3200.PDF`:
@@ -20,6 +16,10 @@ From [ww1.microchip.com/downloads/en/devicedoc/atmel-42723-avr-dragon\_userguide
 ![](avr%20DRAGON%20JTAG%20PINOUT.png)
 
 To make things easy, I used a breadboard in between. This will also make it easier to add a logic analyzer onto these lines later in case something doesn't work right. To make this work, I soldered all the `male` ends of the pigtails to a pin header. Be careful to keep those little wires in order!
+
+Mine looks like this...
+
+![](Picoblade%20jtag%20connector.png)
 
 `VCC_OBC` -> `Vtref`. This is the line that lets the Dragon sense what voltage the target is running at. 
 `nSTRST` -> `RESET_N`. I picked pin #5 since this is the one that the gomspace HS3 cable connected to.
