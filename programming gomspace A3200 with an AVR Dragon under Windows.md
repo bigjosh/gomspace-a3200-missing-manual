@@ -22,11 +22,12 @@ Mine looks like this...
 ![](Picoblade%20jtag%20connector.png)
 
 `VCC_OBC` -> `Vtref`. This is the line that lets the Dragon sense what voltage the target is running at. 
+
 `nSTRST` -> `RESET_N`. I picked pin #5 since this is the one that the gomspace HS3 cable connected to.
 
 The rest are self-evident.
 
-Double check your work. The Dragon is pretty good about how it drives lines, but it would be a shame to blow out that $5000 A3200 because of some crossed wires. 
+Double check your work. The Dragon is pretty cautious about how it drives lines, but it would be a shame to blow out that $5000 A3200 because of some crossed wires. 
 
 Here is how mine looks...
 ![](dragon%20to%20a3200.png)
